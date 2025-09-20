@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+}
+.helo{
+  padding: 20px;
+  background-color: #777;
+  text-align: center;
+  color: beige;
+}
+.helo >h1{
+  font-size: 90%;
+  font-style: oblique;
+  fill: aquamarine;
+}
+.container, .articles{
+  display: flex;
+  flex-wrap: wrap;
+   margin: 0;
+   padding: 5px;
+   background-color: lightgray;
+}
+.menu, .first{
+  flex: 1;
+  background: white;
+}
+.items,.field{
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: blanchedalmond;
+  display: block;
+ }
+.items a{
+  list-style: none;
+ 
+ }
+ .items a:hover{
+ background-color: rgb(2, 8, 8);
+ }
+.main, .second{
+  flex: 3;
+  padding-left: 40px;
+  padding-top: 20px;
+  background-color:teal;
+  overflow: hidden;
+}
+.picha{
+  width: 100%;
+  padding-top: 17PX;
+}
+.right, .third{
+  background-color: floralwhite;
+  padding: 10px 35px;
+  margin-top: 7px;
+  flex: 1;
+}
+.last{
+  background-color: firebrick;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  font-size: 18px;
+  
+}
+.nav{
+  display: block;
+  color: white;
+}
+aside{
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgrey;
+}
+
+@media only screen and (max-width: 800px){
+  .main{
+    flex: 80%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px){
+  .header,.container,.menu,.main,.right{
+    flex: 100%;
+  }
+}

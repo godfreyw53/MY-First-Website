@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities in Kenya</title>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+  header{
+    padding: 30px;
+    background: #333;
+    color: white;
+    text-align: center;
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    nav{
+      flex: 1;
+      background-color: tomato;
+      padding: 20px;
+    }
+    nav ul{
+      list-style: none;
+      padding: 0;
+    }
+    article{
+      flex: 0 0 800px;
+      background-color: olivedrab;
+      padding: 20px;
+    }
+    aside{
+      flex: 1;
+      padding: 20px;
+      background-color: blue;
+    }
+    footer{
+      padding: 20px;
+      background-color: beige;
+      text-align: center;
+    }
+    @media  (max-width:600px){
+      section{
+      flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <h1>Cities in Kenya</h1>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#nakuru">Nakuru</a></li>
+        <li><a href="#nairobi">Nairobi</a></li>
+        <li><a href="#kakamega">Kakamega</a></li>
+      </ul>
+    </nav>
+    <article>
+    <p>
+      Nakuru's history began with ancient human settlements, evidenced by archaeological finds at Hyrax Hill, and was formalized as a township in 1904 by the British during the colonial era. It grew from a township to a municipality in 1952, becoming a commercial and political hub in the White Highlands and a significant area for agriculture. Post-independence, it served as a home to Kenya's presidents and prominent politicians before its official charter as a city in 2021, making it Kenya's fourth-largest urban center
+    </p>
+    </article>
+    <aside>
+      <p>
+        Kakamega's history began as an indigenous meeting point before becoming a British administrative post in 1903, eventually replacing the older trading center of Mumias after gold was discovered in the area in 1931, triggering a "gold rush" and rapid growth for the town. Its name is derived from the local practice of "pinching" ugali (corn meal), a practice that the early European settlers observed and emulated. 
+      </p>
+    </aside>
+  </section>
+  <footer>
+    &copy; Godfrey
+  </footer>
+</body>
+</html>

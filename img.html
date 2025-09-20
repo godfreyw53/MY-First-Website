@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <link rel="shortcut icon" href="/images/favicon-96x96.png" type="image/png" sizes="96x96">
+  <style>
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background-color:white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: wheat;
+  background: #777;
+}
+nav{
+  float: left;
+  width: 30%;
+  background: #620d0d;
+   padding: 20px;
+   height: 300px;
+}
+nav li{
+  padding: 0;
+  list-style: none;
+  
+}
+article{
+  float: left;
+ width: 70%;
+  padding: 20px;
+  background: rgba(138, 177, 22, 0.615);
+  height: 300px;
+}
+section::after{
+content: "";
+display: table;
+clear: both;
+}
+footer{
+  background-color: #777;
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+@media (max-width: 600px){
+  nav,article{
+    width: 100%;
+    height: auto;
+  }
+}
+  </style>
+</head>
+<body>
+  <img src="/images/profile.jpg" alt="godfrey" width="104" height="142">
+
+  <p>Here is a quote from a website</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+
+  <p>kenya kwanza manifesto: <q>Nani Hana Kwao</q></p>
+  <p><abbr title="Fanya Fujo Uone">FFU</abbr> origated from the police force in the year 1990</p>
+  <!--<img  src="/images/profile.jpg" alt="Godfrey" usemap="#godfrey">-->
+  <map name="godfrey">
+    <area title="click on the image for more"  shape="rect" coords="708, 734,1,29" href="http://127.0.0.1:5500/index.html" alt="Godfrey">
+       
+  </map>
+  <iframe src="http://127.0.0.1:5500/kwaheri.html#main" title="Stunning Hero Section" style="width: 200px; height: 200px;"></iframe>
+  <div class="web">
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#projects">Projects</a></li>
+</ul>
+  </div>
+
+<ul class="web">
+  <li class="active"><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#projects">Projects</a></li>
+</ul>
+
+<div class="lorem">
+  <div style="background-color: yellow;">
+    <h1>kenya</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae quibusdam! Unde placeat, voluptatem, veritatis tempora explicabo ratione recusandae nostrum dolorem natus obcaecati suscipit culpa. Iure eveniet tenetur ut eius.</p>
+  </div>
+    <div style="background-color: brown;">
+      <h1>Tanzania</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perspiciatis exercitationem eum culpa autem et eveniet voluptas omnis atque dolorem quis reprehenderit qui, magni obcaecati delectus iste dolorum, eius laboriosam?</p>
+    </div>
+    <div style="background-color: blue;">
+      <h1>Uganda</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perspiciatis exercitationem eum culpa autem et eveniet voluptas omnis atque dolorem quis reprehenderit qui, magni obcaecati delectus iste dolorum, eius laboriosam?</p>
+    </div>
+</div>
+
+
+
+
+<h1>Lets look at how HTML layout looks like!</h1>
+<p>we will be able to check on how al this entities relate to one another</p>
+<header>
+  <h1>Kenya ni Home</h1>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#nairobi">Nairobi</a></li>
+      <li><a href="#nakuru">Nakuru</a></li>
+      <li><a href="#mombasa">Mombasa</a></li>
+    </ul>
+  </nav>
+  <article>
+    <p>Nairobi, the "Green City in the Sun," began as a British railway depot in 1899, named after the Maasai phrase Enkare Nairobi for "place of cool waters". It grew from a swamp into the capital and largest city of Kenya, blending modernity with vibrant street life, the rich aroma of grilled nyama choma, and the constant pulse of its diverse population navigating economic challenges and daily life. </p>
+  </article>
+</section>
+<footer>
+  <p>&copy;Godfrey</p>
+</footer>
+
+
+  <h1>My First JavaScript</h1>
+  <p>This example changes the image source to turn a light bulb on or off.</p>
+
+  <img id="myImage" src="images/pic_bulboff.gif" width="100" height="180" alt="Light bulb">
+
+  <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+  </p>
+
+  <script>
+    function light(sw) {
+      const pic = sw === 0 ? "images/pic_bulboff.gif" : "images/bulbon.gif";
+      document.getElementById("myImage").src = pic;
+    }
+  </script>
+
+
+</body>
+</html>

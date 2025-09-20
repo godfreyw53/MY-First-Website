@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+.header {
+  background-color: #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.menu {
+  flex: 1; /* takes 1 share */
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  flex: 3; /* takes 3 shares */
+  padding: 0 20px;
+}
+
+.right {
+  flex: 1; /* takes 1 share */
+  background-color: #e5e5e5;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+/* Responsive: stack columns when under 620px */
+@media only screen and (max-width: 620px) {
+  .menu, .main, .right {
+    flex: 0 0 100%; /* full width on small screens */
+  }
+}
+
+.footer {
+  background-color: #e5e5e5;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hello World</h1>
+</div>
+
+<div class="container">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<div class="footer">© copyright w3schools.com</div>
+
+</body>
+</html>
