@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<style>
+body {
+  
+  font-size: 30px;
+}
+ul{
+display: flex;
+list-style: none;
+justify-content: center;
+  
+}
+li{
+margin: 0 10px;
+}
+a:hover{
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+  
+}
+
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 120px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+  background-color: #13d571;
+  cursor: pointer;
+  border: none;
+}
+/*a:link, a:visited{
+  background-color: tomato;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active{
+  background-color: greenyellow;
+  color: white;
+  cursor: -moz-grabbing;
+}
+  */
+table{
+  font-family:"Sofia", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th{
+  border: 1px solid #dde;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: azure;
+}
+th,tr:hover{
+  background-color: black;
+  color: antiquewhite;
+}
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #13d571;
+  color: white;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<h1>A Fancy Table</h1>
+<table>
+  <tr>
+    <th>company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Godfrey Livumbazi</td>
+    <td>0708576750</td>
+    <td>Kenya</td>
+  </tr>
+  <tr>
+    <td>Lilian Undisa</td>
+    <td>76784940</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Jayden Afanda</td>
+    <td>980865</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Benta Kamede</td>
+    <td>65744494</td>
+    <td>Tanzania</td>
+  </tr>
+</table>
+
+<h2>Difference between display:none and visiblity: hidden</h2>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="/images/img_5terre.jpg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="/images/img_lights.jpg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="/images/img_forest.jpg" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+
+
+
+
+
+
+<h1 class="font-effect-fire">Sofia on Fire</h1>
+<p class="font-effect-fire">Lorem ipsum dolor sit amet.</p>
+<p class="font-effect-fire">123456790</p>
+
+<h1>This is a link</h1>
+<a href="/kenya.html" target="_blank">See The Link</a>
+<div class="tablecontainer">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+  </table>
+</div>
+<ul>
+ 
+  <li><a href="">Home</a></li>
+  <li><a href="">About</a></li>
+  <li><a href="">News</a></li>
+  <li><a href="">Contact</a></li>
+</ul>
+</body>
+</html>
