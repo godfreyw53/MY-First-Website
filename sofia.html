@@ -13,6 +13,10 @@ list-style: none;
 justify-content: center;
   
 }
+.table{
+  position: relative;
+  left: 100px;
+}
 li{
 margin: 0 10px;
 }
@@ -76,6 +80,34 @@ th{
   background-color: #13d571;
   color: white;
   text-transform: uppercase;
+}
+.container{
+  position: relative;
+}
+.black-box{
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+ margin: 30px;
+}
+.gray-box{
+  position: absolute;
+  z-index: 3;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+.green-box{
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: 15px;
+  height: 100px;
 }
 </style>
 </head>
@@ -155,6 +187,7 @@ function resetElement() {
 <h1>This is a link</h1>
 <a href="/kenya.html" target="_blank">See The Link</a>
 <div class="tablecontainer">
+  <div class="table">
   <table>
     <tr>
       <th>First Name</th>
@@ -311,6 +344,7 @@ function resetElement() {
       <td>50</td>
     </tr>
   </table>
+  </div>
 </div>
 <ul>
  
@@ -319,5 +353,14 @@ function resetElement() {
   <li><a href="">News</a></li>
   <li><a href="">Contact</a></li>
 </ul>
+
+
+<h1>Z-index Example</h1>
+<p>An Element with greater stack order is always above an aelement with stack order.</p>
+<div class="container">
+  <div class="black-box">Black box (Z-index: 1)</div>
+  <div class="gray-box">Gray Box (z-index :3)</div>
+  <div class="green-box">Green box (z-index :2)</div>
+</div>
 </body>
 </html>
