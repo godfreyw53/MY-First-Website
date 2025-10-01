@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   font-family: "Poppins", sans-serif;
   background-color: rgb(176, 185, 193);
@@ -11,28 +12,33 @@ body{
   --main:rgb(226, 140, 12);
 
 }
+
 nav{
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 5%;
+  padding: 0.5rem 5%;
 }
+
 nav > ul{
 display: flex;
 list-style-type: none;
 gap: .5rem;
 }
+
 nav > ul li{
   cursor: pointer;
   font-size: 1.2rem;
 }
+
 nav > ul li:hover{
   color: var(--main);
   text-decoration: underline;
   position: relative;
 
 }
+
 button{
   padding: 5px 10px;
   border-radius: 5px;
@@ -41,15 +47,19 @@ button{
   color: white;
   font: 1.2rem;
 }
+
 button:hover{
   opacity: 0.8;
 }
+
 .fa-bars{
   font-size: 2rem;
 }
+
 .fa-bars.active{
   transform: rotate(90deg);
 }
+
 .vertical-items{
   position: absolute;
   transform: translateY(100%) translateX(-100%);
@@ -63,9 +73,8 @@ button:hover{
   gap: 5px;
   opacity: 0;
   transition: all 0.3s;
-
-  
 }
+
 .vertical-items p{
   font-size: 1.2rem;
   transition: transform 0.3s;
@@ -73,7 +82,9 @@ button:hover{
 .vertical-items.active{
   opacity: 1;
   transform: translateY(100%) translateX(0);
+  
 }
+
 @media screen and (min-width: 769px){
   .fa-bars{
     display: none;
@@ -90,3 +101,4 @@ button:hover{
     display: none;
   }
 }
+  
