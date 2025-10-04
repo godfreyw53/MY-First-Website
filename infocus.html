@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In focus formatting</title>
+  <style>
+  label{
+    display: block;
+    }
+    input[type=text]{
+      width: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      outline: none;
+      margin: 8px 0;
+      border: 4px solid #ccc;
+      transition: 0.3s;
+    }/*
+    input[type=text]:focus {
+      background-color: burlywood;
+    }*/
+    input[type=text]:focus {
+  border: 3px solid #555;
+}
+ 
+  </style>
+</head>
+<body>
+  <form action="">
+    <label for="fname">Fname</label>
+    <input type="text" name="Godfrey" id="fname">
+    <label for="lname">Lname</label>
+    <input type="text" name="Livumbazi" id="lname">
+    <input type="text" name="search" id="search" placeholder="search here..">
+
+  </form>
+  
+</body>
+</html>
