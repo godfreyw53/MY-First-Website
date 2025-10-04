@@ -3,27 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>selector attribute</title>
+  <title>Form Format</title>
   <style>
-  input[type ="text"]{
-    padding: 6px;
-    margin-bottom: 10px;
-    width: 150px;
-    background-color: pink;
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: blanchedalmond;
+    }
+  form{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
   }
-  input[type = "button"]{
-    background-color: green;
-    width: 100px;
-    padding: 6px;
+  label{
+    display: block;
+  }
+  input[type=text], select{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d3ef;
+    border-radius: 4px;
+  }
+  input[type=submit]{
+    background-color: greenyellow;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  input[type=submit]:hover{
+    background-color: gold;
+    cursor: pointer;
   }
   </style>
 </head>
 <body>
-  <h2>styling form using selector attribute</h2>
-  <form action="" method="get">
-    First Name: <input type="text" name="name" value="Godfrey" size="20"><br>
-    Last Name: <input type="text" name="name" value="Livumbazi" size="20"><br><br>
-    <input type="button" value="button">
+  <form action="">
+    <label for="fname">First Name:</label>
+    <input type="text" name="name" id="fname" placeholder="Insert your First Name....." size="20">
+    <label for="lname">Last Name:</label>
+    <input type="text" name="name" id="lname" placeholder="Insert your Last Name....." size="20">
+    <label for="country">country</label>
+   <select name="country" id="country">
+    <option value="Canada">Canada</option>
+    <option value="spain">spain</option>
+    <option value="austria">Austria</option>
+    <option value="kenya">Kenya</option>
+   </select>
+   <input type="submit" value="submit">
   </form>
 </body>
 </html>
