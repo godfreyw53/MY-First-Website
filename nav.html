@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navigation bar</title>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+
+  header{
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  ul.navlist{
+    display: flex;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+  ul.navlist li a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+  }
+  ul.navlist li a:hover{
+    background-color: gainsboro;
+    color: black;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-container>div{
+    padding: 10px;
+  }
+  .footer{
+    display: flex;
+    height: 10%;
+    background-color: #333;
+  }
+  .icons{
+    display: flex;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    gap: 10px;
+  }
+  .icons>li{
+    color: white;
+  }
+  @media screen and (max-width:600px){
+    .flex-container{
+      flex-direction: column;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  <ul class="navlist">
+    <li><a href="">Home</a></li>
+    <li><a href="">News</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+  <div class="flex-container">
+    <div>
+      <h2>About me</h2>
+      <p>I am 35 years of age with avast technology in HTML, CSS and Javascript</p>
+    </div>
+    <div>
+      <h2>My Achievements</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error earum ea quo ad nam explicabo, eum voluptas quae corporis officia minus expedita cupiditate adipisci minima aperiam reprehenderit, vitae vel.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores nulla quod quaerat quo iste minima hic quis veniam doloremque voluptates officiis mollitia necessitatibus sapiente culpa veritatis corrupti, totam repellendus?</p>
+    </div>
+    <div>
+      <h2>My Aspirations</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo tempora repudiandae, odit vero autem nobis accusantium laborum obcaecati illum molestias fugiat in corporis quibusdam fuga pariatur placeat? Placeat, at veritatis?</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="icons">
+       <div>
+       <p>&copy;Godfrey Livumbazi 2025</p>
+    </div >
+    <div>
+      <p>Phone :+254708576750</p>
+    </div>  
+    <div>
+      <p>Important Links<p>
+        <a href="">facebook</a>
+        <a href="">X</a>
+        <a href="">Instagram</a>
+        <a href="">Linkedin</a>
+    </div>
+     </div>
+
+  </footer>
+</body>
+</html>
